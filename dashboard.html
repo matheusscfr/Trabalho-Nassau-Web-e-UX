@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+  rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+
+
+
+<div class="ccontainer">
+
+<aside>
+
+  <div class="sidebar"> 
+    <div class="toggle">
+      <div class="logo">
+          <h2><span class="blue">AVC</span> </h2>
+      </div>
+      <div class="close" id="close-btn">
+          <span class="material-icons-sharp">
+                  close
+          </span>
+      </div> 
+  </div>
+    
+    <a href="#">
+        <span class="material-icons-sharp">
+        dashboard
+        </span>
+        <h3>Home</h3>
+    </a>
+    <a href="#">
+        <span class="material-icons-sharp">
+        receipt_long
+        </span>
+        <h3>History</h3>
+    </a>
+    <a href="#" class="active">
+        <span class="material-icons-sharp">
+        insights
+        </span>
+        <h3>Analytics</h3>
+    </a>
+    <a href="#"><span class="material-icons-sharp">
+        mail_outline
+        </span>
+        <h3>Tickets</h3>
+        <span class="message-count">2</span>
+    </a>
+    <a href="#"><span class="material-icons-sharp">
+        inventory
+        </span>
+        <h3>Sale List</h3>
+    </a>
+    <a href="#"><span class="material-icons-sharp">
+        report
+        </span>
+        <h3>Reports</h3>
+    </a>
+    <a href="#"><span class="material-icons-sharp">
+        settings
+        </span>
+        <h3>Settings</h3>
+    </a>
+    <a href="#"><span class="material-icons-sharp">
+        logout
+        </span>
+        <h3>Logout</h3>
+    </a>
+</div>
+</aside>
+
+  <div class="container">
+    <div class="header">
+      <span>Cadastro de Funcionários</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome da Flor</th>
+            <th>Nome do Vendedor</th>
+            <th>Quantidade de Flores</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-nome">Nome da Flor</label>
+          <input id="m-nome" type="text" required />
+  
+          <label for="m-funcao">Nome do Vendedor</label>
+          <input id="m-funcao" type="text" required />
+  
+          <label for="m-salario">Quantidade</label>
+          <input id="m-salario" type="number" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+
+</html>
