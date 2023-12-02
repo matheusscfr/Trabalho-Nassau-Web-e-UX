@@ -36,7 +36,7 @@
     width: 40%;
     height: 80%;
     gap: 1rem;
-    margin:14% auto;
+    margin:6% auto;
 }
 
 .form-title{
@@ -92,38 +92,21 @@ font-size: 15px;
 
 .form-login form a{
     color: black;
+    margin: 2%;
 }
 
 .form-login form .form-button{
-display: flex;
-flex-direction: column;
-width: 100%;
-gap: 1rem;
+    margin: 0 auto;      
+    width: 60%;
+
 }
 
-
-#submit-entrar{
+#submit-enviar{
 background-color: #49BBBD;
-border: solid 1px #49BBBD;
-height: 45px;
-width: 100%;
-border-radius: 20px;
 font-size: 16px;
 color: white;
 font-weight: 400;
-}
-
-
-#submit-cadastrar{
-background-color: #006F71;
-border: solid 1px #006F71;
-height: 45px;
-width: 100%;
-border-radius: 20px;
-font-size: 16px;
-color: white;
-font-weight: 400;
-
+cursor: pointer;
 }
 
 @media screen and (max-width:1200px){
