@@ -8,11 +8,15 @@
 
 .container-header{
   width:100%;
-  height:60vh;
+  height:80vh;
   margin: 0 auto;
-  background-image: url(../img/perfect-yellow-flower.jpg);
+  background-image: url(../img/wepik-export-20231130144445XFU7.png);
   padding: 10px;
-  background-size: 100% 100%;
+  background-size: 900px 600px ;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  
+ 
 
 }
 
@@ -28,18 +32,15 @@
  gap:5rem;
 }
 
-.container-logo h2 {
-  color: white;
-}
 
 .container-menu ul li{
   list-style:none;
-  color: white;
+  color: black;
 }
 
 .container-menu ul li a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 
@@ -57,9 +58,11 @@
 
 .container-login a{
   text-align: center;
+  width: 80px;
+  height: 35px;
+  background-color: rgba(217, 217, 217, 0.80);;
   text-decoration:none;
-  color: white;
-  padding: 2% 15px;
+  color:black;
   border-radius: 40px;
 }
 
@@ -68,8 +71,9 @@
   font-size: 35px;
   color: white;
 }
-.container-login a:nth-child(4){
-  background-color: rgba(255, 255, 255, 0.6);
+
+.container-login a:nth-child(3){
+  background-color: rgba(217, 217, 217, 0.80);
 }
 
 .container-login i:nth-child(1){
@@ -89,7 +93,7 @@
 }
 
 .header-b-title span{
-  color:white;
+  color:#006F71;
 }
 
 .header-buscar{
@@ -104,13 +108,13 @@
   width:35%;
   height:37px;
   border-radius:20px;
-  background-color:rgba(217, 217, 217, 0.80);
-  border: 1px solid rgba(217, 217, 217, 0.80);
+  background-color:rgba(217, 217, 217, 0.8);
+  border: 1px solid rgba(217, 217, 217, 0.8);
 }
 
 .header-buscar i{
   font-size: 50px;
-  color: white;
+  color: #006F71;
 }
 
 .body-flores{
@@ -153,6 +157,7 @@
 .body-local{
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   padding: 4%;
 }
@@ -163,8 +168,9 @@
   margin-bottom: 10%;
 }
 
-.body-local-img img{
+.body-local-img iframe{
   height: 450px;
+
 }
 
 .body-footer{
@@ -260,6 +266,17 @@
   }
 
 
-  
+  .container-logo h2 {
+    display: none;
+  }
 
+  .body-local-img iframe{
+    height: 250px;
+    width: 90%;
+  
+  }
+
+  .container-logo img{
+    display: none;
+  }
 }
