@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,600;1,700;1,800&display=swap');
+
+*{margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+.container-header{
+  width:100%;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  padding: 10px;
+
+}
+
+.container-header-menu{
+ display:flex;
+ flex-direction:row;
+ justify-content:space-evenly;
+ margin: 3% auto;
+}
+
+.container-menu ul{
+ display:flex;
+ gap:5rem;
+}
+
+.container-menu ul li{
+  list-style:none;
+text-decoration: none;
+}
+.container-menu ul li a{
+
+  text-decoration: none;
+  color: black;
+  }
+  
+
+
+
+
+.container-login{
+  display: flex;
+  gap: 1rem;
+}
+
+.container-menu ul li:nth-child(1){
+  display: none;
+}
+
+.container-login a{
+  text-align: center;
+  text-decoration:none;
+  color: black;
+  padding: 2% 15px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.container-login i:nth-child(2){
+  font-size: 32px;
+  color: black;
+}
+.container-login a:nth-child(4){
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.container-login i:nth-child(1){
+  display: none;
+}
+.header-b{
+  display: flex;
+  flex-direction: column;
+
+}
+.header-b-title{
+  color: #49BBBD;
+  text-align: center;
+}
+
+.header-b-title span{
+  color:white;
+}
+
+
+
+
+.header-buscar i{
+  font-size: 50px;
+  color: white;
+}
+
+.container-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-pagamento{
+    display: flex;
+    margin: 3% 10% 10% 10%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+.body-pagamento-title h2{
+    margin-bottom: 2%;
+}
+
+
+.body-pagamento-cartao{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.body-pagamento-cartao img{
+    height: 70px;
+   border-radius: 30px;
+}
+
+.body-pagamento-form input{
+width: 100%;
+border-radius: 20px;
+height: 15%;
+}
+
+
+.body-pagamento-form-data{
+    display: flex;
+    padding: 2%;
+}
+
+.body-pagamento-form-data input{
+    margin: 2%;
+}
+
+.body-pagamento-form input[type=submit]{
+    background-color: #49BBBD;
+    border: none;
+    color: white;
+}
+
+.body-carrinho{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: rgba(157,204,255,0.4);
+    border-radius: 25px;
+    height: 50%;
+}
+
+.body-carrinho-title{
+    margin-bottom:12% ;
+}
+
+.body-carrinho-item{
+    display: flex;
+    gap: 1rem;
+    padding-left: 10%;
+    justify-content: center;
+    border-bottom: 1px solid #5B5B5B;
+
+}
+
+.body-carrinho-item img{
+    height: 100px;
+    border-radius: 17px;
+    margin: 4% 0;
+}
+
+
+.display{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    border-bottom: 1px solid #5B5B5B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body-footer{
+    width: 100%;
+    background-color: #006F71;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .body-footer-icon{
+    margin: 1% auto;
+  }
+  .body-footer-icon img{
+    height: 70px;
+  }
+  
+  .body-footer-social{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin: 1.2% 0;
+  }
+  
+  .body-footer-social i{
+    font-size: 30px;
+    color: white;
+  
+  }
+  .body-footer-texto{
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width:1000px){
+
+    .container-login a{
+      display: none;
+    }
+  
+    .container-login i{
+      display: flex;
+      font-size: 45px;
+      color: black;
+    }
+  
+    .container-menu ul li{
+      display: none;
+    }
+  
+    .container-menu ul li:nth-child(1){
+      display: flex;
+      height: 70px;
+    }
+
+    .container-body{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .body-pagamento-cartao img{
+        height: 40px;
+    }
+
+}
